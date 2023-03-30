@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/95c8bfd2c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <h1>Splitter</h1>
+      <div class="container">
+        <div class="options face">
+          <div class="row1 row">
+            <h3 class="title">Bill</h3>
+            <div class="bill-amount input-area">
+              <i
+                class="fas fa-sharp fa-regular fa-dollar-sign"
+                style="color: #9c9fa5"
+              ></i>
+              <input
+                type="text"
+                class="no-spinners"
+                id="total-bill"
+                maxlength="6"
+              />
+            </div>
+          </div>
+          <div class="row2 row">
+            <h3 class="title">Select Tip</h3>
+            <div class="tip-amount">
+              <button class="tip-btn" value="5">5%</button>
+              <button class="tip-btn" value="10">10%</button>
+              <button class="tip-btn" value="15">15%</button>
+              <button class="tip-btn" value="25">25%</button>
+              <button class="tip-btn" value="50">50%</button>
+              <button class="tip-btn" value="custom" id="custom-btn">
+                Custom
+              </button>
+              <input
+                type="text"
+                id="custom-tip"
+                maxlength="6"
+                class="no-spinners"
+                style="display: none"
+              />
+            </div>
+          </div>
+          <div class="row3 row">
+            <h3 class="title">
+              No fo People<span id="msg">Can't be zero</span>
+            </h3>
+            <div class="no-of-person input-area">
+              <i
+                class="fa-solid fa-user fa-beat-fade fa-xs fas"
+                style="color: #9c9fa5"
+              ></i>
+              <input
+                type="text"
+                class="no-spinners"
+                id="peoples"
+                maxlength="6"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="results face">
+          <div class="row1 row">
+            <div class="left">
+              <h5 class="title">
+                Tip Amount <br />
+                <span> / Person</span>
+              </h5>
+            </div>
+            <div class="right">$ <span id="final-tip">0.00</span></div>
+          </div>
+          <div class="row2 row">
+            <div class="left">
+              <h5 class="title">
+                Total <br />
+                <span> / Person</span>
+              </h5>
+            </div>
+            <div class="right">$ <span id="final-amount">0.00</span></div>
+          </div>
+          <div class="row3 row">
+            <button id="resetBtn">RESET</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/codemode365"target="_blank">CodeMode365 (Pabin)</a>.
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
